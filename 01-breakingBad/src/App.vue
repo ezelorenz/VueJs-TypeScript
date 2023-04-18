@@ -1,10 +1,18 @@
 <script setup lang="ts">
+import { RouterView } from 'vue-router';
+import NavBar from './shared/components/NavBar.vue';
+
 </script>
 
 <template>
   <div class="wrapper">
-    <h1>Hola </h1>
-    <p>Mundo</p>
+    <header>
+      <NavBar/>
+    </header>
+    <main>
+      <RouterView />
+    </main>
+
   </div>
 </template>
 
